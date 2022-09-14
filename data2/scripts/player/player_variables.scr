@@ -17,16 +17,16 @@ sub main()
     Param("WallRunSideEnabled", "false");
 	Param("WallRunSideMinAngleToStart", "-90.0");
     Param("WallRunSideMaxAngleToStart", "-14.5");
-    Param("WallRunSideNitroSprintSpeedMod", "1.05");
+    Param("WallRunSideNitroSprintSpeedMod", "1.25");
 	Param("WallRunSideMinDuration", "0.75");
-    Param("WallRunSideMaxDuration", "1.25");
+    Param("WallRunSideMaxDuration", "2.25");
     Param("WallRunSideWithoutNitroTimePenalty", "-0.25");
 	Param("WallRunSideMinSideInput", "0.0");
 	Param("WallrunHoldJumpTime", "0.0");
 	
 	
-	Param("WallRunSideMaxSpeed", "7.0");
-    Param("WallRunSideMinSpeed", "4.5");
+	Param("WallRunSideMaxSpeed", "9.0");
+    Param("WallRunSideMinSpeed", "5.5");
 	Param("WallRunSideAcc", "100.0");
     Param("WallRunSideDecc", "200.0");
 	
@@ -43,14 +43,14 @@ sub main()
     // WallJump Front
     Param("WallJumpFrontEnabled", "false");    
 	Param("WallJumpFrontLookForwardEnabled", "false");
-    Param("WallJumpFrontSpeed", "5.5");
+    Param("WallJumpFrontSpeed", "7.5");
 	Param("WallJumpFrontRotateEnabled", "false"); 	
 	Param("WallRunFrontExtraGravityWhenFalling", "8.5");
     
     // WallJump Side
 	Param("WallRunSideJumpForwardMinForwardInput", "0.9");
     Param("WallJumpSideEnabled", "true");
-    Param("WallJumpSideSpeed", "7.0"); 
+    Param("WallJumpSideSpeed", "9.0"); 
 	Param("WallRunSideExtraGravityWhenFalling", "9.9");
 	Param("WallRunSideExtraGravityInEnding", "3.5");
 	
@@ -127,7 +127,7 @@ sub main()
     Param("WQ_Rot_Duration", "25.0");
     Param("HitReactionSpeechProb", "0.5");
     Param("PursuitBreakerBlastDamage", "PursuitBreakerBlast");
-    Param("NightXPBonus", "1.0"); //bonus xp to all xp actions when performed during night (eg 0.2 -> +20%)
+    Param("NightXPBonus", "5.0"); //bonus xp to all xp actions when performed during night (eg 0.2 -> +20%)
     // Status Night Expieriance awards and requirements
     Param("NightExpRequiredDistance", "2.0");
     Param("NightExpRequiredActions", "0.0");
@@ -170,22 +170,22 @@ sub main()
     //Survivor sense	
 	Param("SurvivalSenseEnabled", "true");
 	Param("CanUseSenseWhenMoving", "true");
-	Param("SurvivorSenseCooldown", "0.5"); // sensor rest time in seconds   
+	Param("SurvivorSenseCooldown", "0.1"); // sensor rest time in seconds   
     Param("SurvivorSensePreparationTime", "0.0"); // hold time required to 'load' survivor sense
-    Param("SurvivorSensePreparationTimeWhenAiming", "0.25");
+    Param("SurvivorSensePreparationTimeWhenAiming", "0.1");
 	
 		// Visual
-    Param("SurvivorSenseRange",        "20.0"); // Range of visualization of sonar 
-    Param("SurvivorSenseOpacity",      "1.0"); // Strength of visual effect set in range 0.0 - 1.0. It is a global variable that affects all visualizations. If you want to control the intensity of the effect per object/AI type use AlphaMax and AlhpaMin in survivor_sense_presets.scr
-    Param("SurvivorSenseWaveDuration", "3.0"); //[s] how long we will see the "wave" (player cant activate another wave until this one is finished)
-    Param("SurvivorSenseIconDuration", "10.0"); //how long the objects icons will stay on screen
-    Param("SurvivorSenseAIDuration",   "10.0"); // how long AIs will be highlited
+    Param("SurvivorSenseRange",        "30.0"); // Range of visualization of sonar 
+    Param("SurvivorSenseOpacity",      "0.5"); // Strength of visual effect set in range 0.0 - 1.0. It is a global variable that affects all visualizations. If you want to control the intensity of the effect per object/AI type use AlphaMax and AlhpaMin in survivor_sense_presets.scr
+    Param("SurvivorSenseWaveDuration", "1.0"); //[s] how long we will see the "wave" (player cant activate another wave until this one is finished)
+    Param("SurvivorSenseIconDuration", "15.0"); //how long the objects icons will stay on screen
+    Param("SurvivorSenseAIDuration",   "15.0"); // how long AIs will be highlited
 
 		// Height
-    Param("SurvivorSenseAIHeight",          "10.0"); //detection height for AIs
-    Param("SurvivorSenseAIHeightInterior",  "4.0"); //detection height for AIs when they are in interior (buildings etc.)
-	Param("SurvivorSenseObjectHeight",      "10.0"); //detection height for other objects
-    Param("SurvivorSenseObjectHeightInterior", "4.0"); //detection height for other objects when they are in interior (buildings etc.)
+    Param("SurvivorSenseAIHeight",          "15.0"); //detection height for AIs
+    Param("SurvivorSenseAIHeightInterior",  "8.0"); //detection height for AIs when they are in interior (buildings etc.)
+	Param("SurvivorSenseObjectHeight",      "15.0"); //detection height for other objects
+    Param("SurvivorSenseObjectHeightInterior", "8.0"); //detection height for other objects when they are in interior (buildings etc.)
 
 		//detection ranges per icon type:
     Param("SurvivorSenseRange_IconType_Default",     "20.0");
@@ -230,7 +230,7 @@ sub main()
 	Param("GREDetectorWithoutFacility", "false");
     Param("GREDetectorRange", "0.0");
     Param("GREDetectionLevel", "0");
-	Param("GREDetectorRangeNearby", "15.0");
+	Param("GREDetectorRangeNearby", "20.0");
     Param("GREDetectorRange3DIndication", "10.0");
     Param("GREDetectorRangeFoundTollerance", "2.0");
 
@@ -285,14 +285,14 @@ sub main()
     Param("HarvestingMultipleItemsCount", "2");
     Param("CrouchDampingWindowTime", "1.0");                    //  player can amorize fall 
     Param("EnableFallHelperModule", "1");    
-    Param("MinTimeBetweenJumps", "0.4");
+    Param("MinTimeBetweenJumps", "0.1");
     Param("Aiming", "1");
     Param("DoubleJumpInOverAndOn", "0");    
     Param("CoolodownFailDisplayTime", "1.5");
     Param("SquirrelSuitExtraGravity", "7.0");
     Param("SquirrelSuitMoveSpeed", "12.0");
     Param("EmptySwingStaminaUsageMul", "0.0");    
-	Param("BaseAttackStaminaUsage", "1");
+	Param("BaseAttackStaminaUsage", "0.5");
     Param("LogicJumpAirControllFactor", "0.22");    
     Param("ThrowRopeLength", "0.0");    
     Param("GrabExpert", "0");
@@ -327,13 +327,13 @@ sub main()
     Param("ParkourStaminaHangDelayTime", "1.0");        
 	Param("ParkourStaminaSlopeStruggleAdditional", "0.0"); // when tappping to fight against the slope it will decrease this value every second of struggle	    
 	Param("SwimSecondsUnderWater", "30");
-	Param("SwimStaminaUsage", "0.05");	
-	Param("SwimNitroAvailable", "false");
+	Param("SwimStaminaUsage", "0.03");	
+	Param("SwimNitroAvailable", "true");
 	Param("CustomMoveSlowVersionIfExist", "true");		
 	
 	
-	Param("GlideStaminaCost", "0.1");
-    Param("HoverGliderStaminaCost", "0.2");
+	Param("GlideStaminaCost", "0.05");
+    Param("HoverGliderStaminaCost", "0.1");
 	
 	Param("StaminaHeavyBreathLevelStartBow", "0.25");
 	Param("StaminaHeavyBreathLevelMaxBow", "0.0");
@@ -347,11 +347,11 @@ sub main()
     Param("MaxStaminaDrainFactor", "1.0");
     Param("MaxStaminaDrainEnabled", "true");
     Param("MinStaminaLevelFromHit", "0.0");
-    Param("StaminaTimeToRegenerateOnEmpty", "1.5");
-    Param("StaminaTimeToRegenerateOnEmptyAfterParokur", "1.0");          // NOT WORKING IN COMBAT  -time needed to fully restore stamina when completely depleted
-    Param("StaminaTimeToRegenerate", "0.6");                 // time after which stamina starts to regenerate if player still has some stamina left
-    Param("StaminaTimeToRegenerateAfterParkour", "0.6");     // time after which stamina starts to regenerate if player still has some stamina left
-    Param("StaminaRegeneration", "1.5");                    // WARNING CHANGED SO EVERY THING IS IN SECONDS rate at which stamina regenerates in seconds to full bar!!
+    Param("StaminaTimeToRegenerateOnEmpty", "1.2");
+    Param("StaminaTimeToRegenerateOnEmptyAfterParokur", "0.5");          // NOT WORKING IN COMBAT  -time needed to fully restore stamina when completely depleted
+    Param("StaminaTimeToRegenerate", "0.3");                 // time after which stamina starts to regenerate if player still has some stamina left
+    Param("StaminaTimeToRegenerateAfterParkour", "0.3");     // time after which stamina starts to regenerate if player still has some stamina left
+    Param("StaminaRegeneration", "1.3");                    // WARNING CHANGED SO EVERY THING IS IN SECONDS rate at which stamina regenerates in seconds to full bar!!
 	Param("StaminaRegenerationOutsideDanger", "1.5");
     Param("StaminaRegenerationFactorSlow", "0.33");               // factor when running or being on ladder
 	Param("StaminaRegenerationFactorStand", "0.25");               // factor when standing still
@@ -364,10 +364,10 @@ sub main()
 
 	Param("DashAndAfterboostPostprocessMax", "0.33");
 	Param("SprintNitroStopAngleMoveInput", "20.0");
-    Param("SprintNitroStaminaConsuption", "0.40");
-    Param("SprintNitroStartStaminaConsuption", "0.80");
+    Param("SprintNitroStaminaConsuption", "0.30");
+    Param("SprintNitroStartStaminaConsuption", "0.50");
     Param("SprintNitroMinDuration", "0.6");
-    Param("SprintNitroDuration", "1.5");
+    Param("SprintNitroDuration", "3.0");
     Param("SprintNitroBodyDirLagTime", "0.65");
 	Param("MoveSlopeSpeed", "1.65");
 	Param("AutoSlopeAddSpeed", "0.35");
@@ -403,7 +403,7 @@ sub main()
     Param("CanThrowInLookback", "0");
     Param("ChallengeStaminaDropMul", "0.2");
     Param("ZipLineMinSpeed", "6.0");
-    Param("ZipLineMaxSpeed", "11.0");
+    Param("ZipLineMaxSpeed", "16.0");
 	Param("ZipLineAboveSlideEnabled", "1");
     Param("StrengthDamageMul", "Player_StrengthDamageMul");
     Param("MeleeDamageMul", "Player_MeleeDamageMul");
@@ -414,10 +414,10 @@ sub main()
     Param("MeleeDamageLowHealthMul", "Player_MeleeDamageLowHealthMul");
     Param("MeleeLowStaminaForceAndPhxMul", "1.0");
 	
-	Param("ObstaclePassMinTimeBetween", "0.5");	
+	Param("ObstaclePassMinTimeBetween", "0.1");	
 	//Param("MeleeDamageShockMul", "Player_MeleeDamageShockMul");
-	Param("MeleeFastHitMaxDist", "1.8");	
-	Param("MeleeFastHitMinDist", "1.2");
+	Param("MeleeFastHitMaxDist", "2.0");	
+	Param("MeleeFastHitMinDist", "1.0");
     Param("KickBaseDamageMul", "Player_KickBaseDamageMul");
     Param("MeleeVerticalPhysicalDamageMul", "1.5");
 	Param("MeleeBluntRagdollEveryXHit", "0");
@@ -431,12 +431,12 @@ sub main()
     Param("AirKickPhysicsDamage", "2.0");
     Param("AirKickRangeMul", "1.2");
     Param("AirKickStaminaUsage", "0.3");
-    Param("HarmfulHeight", "6.8");
-	Param("LargeFallHeight", "4.8");	
-    Param("LethalHeight", "14.0");
+    Param("HarmfulHeight", "13.0");
+	Param("LargeFallHeight", "6.8");	
+    Param("LethalHeight", "25.0");
     Param("FallHeightFilter", "0.3");
-    Param("AmortizedHarmfulHeight", "14.0");
-    Param("AmortizedLethalHeight", "14.0");
+    Param("AmortizedHarmfulHeight", "20.0");
+    Param("AmortizedLethalHeight", "30.0");
     Param("FallingHeightToRespawn", "150");
     Param("ActiveLandingSpeedRegainFactor", "0.5");
     Param("ActiveLandingMaxSlowdown", "0.9");
@@ -548,23 +548,23 @@ sub main()
     Param("AfterDeathHealthFactor", "Player_AfterDeathHealth");   // Part of MaxHealth restored after respawn
     Param("BulletAccuracyFactor", "1.0");
 	Param("UnlockedLoadoutsCount", "1.0");
-    Param("EquipmentSlotsCount", "16");          //total inventory slots for equipment
-    Param("VisibleEquipmentSlotsCount", "4");   //how many "quick slots" player has in hud wheels (must be < EquipmentSlotsCount)
-    Param("ConsumableSlotsCount", "16");         //total inventory slots for consumables
-    Param("VisibleConsumableSlotsCount", "4");  //how many "quick slots" player has in hud wheels (must be < ConsumableSlotsCount)
+    Param("EquipmentSlotsCount", "32");          //total inventory slots for equipment
+    Param("VisibleEquipmentSlotsCount", "6");   //how many "quick slots" player has in hud wheels (must be < EquipmentSlotsCount)
+    Param("ConsumableSlotsCount", "32");         //total inventory slots for consumables
+    Param("VisibleConsumableSlotsCount", "6");  //how many "quick slots" player has in hud wheels (must be < ConsumableSlotsCount)
     Param("RestrictedEquipmentSlotsCount", "0"); // UV Flashlight, Binoculars, RopeHook. Value is increased from skills that grants thoes equipments
-	Param("QuickSlotsCount", "24");              //total inventory slots for weapons
-    Param("VisibleQuickSlotsCount", "4");       //how many "quick slots" player have on hud wheels (must be < QuickSlotsCount)
+	Param("QuickSlotsCount", "32");              //total inventory slots for weapons
+    Param("VisibleQuickSlotsCount", "6");       //how many "quick slots" player have on hud wheels (must be < QuickSlotsCount)
     Param("InventorySize", "0");
     Param("ItemsInventorySize", "99"); //limited max is 100
     Param("MaxInventorySize", "8");
     Param("AmmoSlotsCount", "12"); // limited max is 100
-    Param("SwimMoveSpeed", "2.5");
-    Param("SwimSprintSpeed", "4.0");
-    Param("SwimImpulsSpeed", "2.0");
-    Param("SwimStrafeSpeed", "0.7");
-    Param("SwimAcceleration", "0.7");
-	Param("SwimUpAcceleration", "2.1");
+    Param("SwimMoveSpeed", "3.5");
+    Param("SwimSprintSpeed", "5.0");
+    Param("SwimImpulsSpeed", "3.0");
+    Param("SwimStrafeSpeed", "0.9");
+    Param("SwimAcceleration", "0.9");
+	Param("SwimUpAcceleration", "3.1");
     Param("SprintEffects", "0.9");
 	Param("SprintEffectsInPGandRG", "1.25");	
     Param("SprintWithoutInput", "1");
@@ -793,15 +793,15 @@ sub main()
     Param("DialogInputZoomFov", "-6.0");
     Param("DialogInputZoomDof", "0.6");                 // [0,1]
 
-	Param("JumpRetryTime", "0.3");
+	Param("JumpRetryTime", "0.1");
 	Param("JumpTapTime", "0.05");
-	Param("HoldJumpHeight", "4.85");
+	Param("HoldJumpHeight", "6.85");
 	Param("NormalHoldJumpTime", "0.1");
 	Param("MonkeyBarHoldJumpTime", "0.2");
 	Param("RopeHoldJumpTime", "0.2");
-    Param("NormalJumpHeight", "0.52");
-	Param("DoubleJumpHeight", "3.2");
-	Param("FarJumpHeight", "0.8");
+    Param("NormalJumpHeight", "2.52");
+	Param("DoubleJumpHeight", "4.2");
+	Param("FarJumpHeight", "1.2");
 	
 	Param("FarJumpAvailable", "0");
 	Param("FarJumpTackleMaxHeightDiff", "2.0");
@@ -1854,7 +1854,7 @@ sub main()
     Param("PlayerDamageVulnerability", "");
     Param("PlayerFallDamageVulnerability", "");
 
-    Param("WeaponStaminaUsageMul", "1.0");
+    Param("WeaponStaminaUsageMul", "0.5");
     Param("StaminaRegenerationMul", "1.0");
 
     Param("InjectorDescSuffix", "");
@@ -1871,7 +1871,7 @@ sub main()
     Param("SweatGetingSweatDuration", "10.0");
 	
 	Param("MeleeProgressiveHitCooldownTimer", "4.0");
-	Param("EpicMomentProbability", "0.1");	
+	Param("EpicMomentProbability", "0.2");	
 
     Param("MapPlayableAreaTeleportTime", "5.0");
     Param("SoftPlayableAreaFailTime", "5.0");
@@ -1882,8 +1882,8 @@ sub main()
 
     Param("LowerLevelRandomModProcProbMul", "0.5");
 
-    Param("OpenWorldXPModifier", "1.0");
-    Param("OpenWorldNightXPModifier", "1.0");
+    Param("OpenWorldXPModifier", "4.0");
+    Param("OpenWorldNightXPModifier", "12.0");
 
     Param("PostReviveInvisibility", "false");
 

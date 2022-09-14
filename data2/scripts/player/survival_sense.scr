@@ -1,0 +1,8 @@
+sub main()
+{
+	SurvivalSenseColor(0, 226, 226, 0.35);
+	SkeletonColor(255, 255, 255, 1);
+	BlinkSkeleton(false);
+	AIHiglightDuration(5.0);
+	TrailSpotHighlightDuration(30.0);
+}
