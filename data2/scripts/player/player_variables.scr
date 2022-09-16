@@ -5,21 +5,21 @@ sub main()
 	Param("ManualSloMoCooldown", "5.0");  
 	
 	// WallRun Front
-    Param("WallRunFrontEnabled", "false");
+    Param("WallRunFrontEnabled", "true");
 	Param("WallRunFrontPeakDelay", "0.1");    
-    Param("WallRunFrontHeightNitro", "5.0");
-	Param("WallRunFrontHeight", "2.5");
-    Param("WallRunFrontMinAngleToStartAscend", "90");
-    Param("WallRunFrontMinYVelToAscend", "1.0");    
+    Param("WallRunFrontHeightNitro", "9.0");
+	Param("WallRunFrontHeight", "6.0");
+    Param("WallRunFrontMinAngleToStartAscend", "70");
+    Param("WallRunFrontMinYVelToAscend", "0.3");    
     
     // WallRun Side
     // WallRun Side
-    Param("WallRunSideEnabled", "false");
+    Param("WallRunSideEnabled", "true");
 	Param("WallRunSideMinAngleToStart", "-90.0");
     Param("WallRunSideMaxAngleToStart", "-14.5");
-    Param("WallRunSideNitroSprintSpeedMod", "2.25");
+    Param("WallRunSideNitroSprintSpeedMod", "6.25");
 	Param("WallRunSideMinDuration", "0.5");
-    Param("WallRunSideMaxDuration", "3.0");
+    Param("WallRunSideMaxDuration", "5.0");
     Param("WallRunSideWithoutNitroTimePenalty", "-0.25");
 	Param("WallRunSideMinSideInput", "0.0");
 	Param("WallrunHoldJumpTime", "0.0");
@@ -176,7 +176,7 @@ sub main()
 	
 		// Visual
     Param("SurvivorSenseRange",        "30.0"); // Range of visualization of sonar 
-    Param("SurvivorSenseOpacity",      "0.5"); // Strength of visual effect set in range 0.0 - 1.0. It is a global variable that affects all visualizations. If you want to control the intensity of the effect per object/AI type use AlphaMax and AlhpaMin in survivor_sense_presets.scr
+    Param("SurvivorSenseOpacity",      "0.7"); // Strength of visual effect set in range 0.0 - 1.0. It is a global variable that affects all visualizations. If you want to control the intensity of the effect per object/AI type use AlphaMax and AlhpaMin in survivor_sense_presets.scr
     Param("SurvivorSenseWaveDuration", "1.0"); //[s] how long we will see the "wave" (player cant activate another wave until this one is finished)
     Param("SurvivorSenseIconDuration", "15.0"); //how long the objects icons will stay on screen
     Param("SurvivorSenseAIDuration",   "15.0"); // how long AIs will be highlited
@@ -230,8 +230,8 @@ sub main()
 	Param("GREDetectorWithoutFacility", "false");
     Param("GREDetectorRange", "0.0");
     Param("GREDetectionLevel", "0");
-	Param("GREDetectorRangeNearby", "20.0");
-    Param("GREDetectorRange3DIndication", "10.0");
+	Param("GREDetectorRangeNearby", "90.0");
+    Param("GREDetectorRange3DIndication", "30.0");
     Param("GREDetectorRangeFoundTollerance", "2.0");
 
 	// UV Flashlight
@@ -364,10 +364,10 @@ sub main()
 
 	Param("DashAndAfterboostPostprocessMax", "0.33");
 	Param("SprintNitroStopAngleMoveInput", "20.0");
-    Param("SprintNitroStaminaConsuption", "0.30");
-    Param("SprintNitroStartStaminaConsuption", "0.50");
-    Param("SprintNitroMinDuration", "0.6");
-    Param("SprintNitroDuration", "3.0");
+    Param("SprintNitroStaminaConsuption", "0.10");
+    Param("SprintNitroStartStaminaConsuption", "0.10");
+    Param("SprintNitroMinDuration", "1.0");
+    Param("SprintNitroDuration", "5.0");
     Param("SprintNitroBodyDirLagTime", "0.65");
 	Param("MoveSlopeSpeed", "1.65");
 	Param("AutoSlopeAddSpeed", "0.35");
@@ -438,7 +438,7 @@ sub main()
     Param("AmortizedHarmfulHeight", "20.0");
     Param("AmortizedLethalHeight", "30.0");
     Param("FallingHeightToRespawn", "150");
-    Param("ActiveLandingSpeedRegainFactor", "0.5");
+    Param("ActiveLandingSpeedRegainFactor", "0.9");
     Param("ActiveLandingMaxSlowdown", "0.9");
     Param("ActiveLandingMaxInputTime", "0.3");
     Param("ActiveLandingMinInputTime", "1.0");
@@ -564,11 +564,11 @@ sub main()
     Param("SwimImpulsSpeed", "3.0");
     Param("SwimStrafeSpeed", "0.9");
     Param("SwimAcceleration", "0.9");
-	Param("SwimUpAcceleration", "3.1");
+	Param("SwimUpAcceleration", "6.1");
     Param("SprintEffects", "0.9");
 	Param("SprintEffectsInPGandRG", "1.25");	
     Param("SprintWithoutInput", "1");
-    Param("SprintNitroAcceleration", "10");
+    Param("SprintNitroAcceleration", "50");
     Param("SprintNitroFovMul", "2.0");
     Param("SprintNitroMaxSpeedAdd", "0.6");
     Param("SprintAutoStartTime", "0.1");
@@ -596,10 +596,10 @@ sub main()
     Param("MoveStrafeMaxSpeed", "3.0");                // DL: 2.5, PREPROD: 2.5
     Param("MoveSprintMinSpeed", "4.5");
     Param("MoveSprintSpeed", "5.0");
-    Param("MoveAcceleration", "20.0");                // DL: 40.0, PREPROD: 20.0
+    Param("MoveAcceleration", "40.0");                // DL: 40.0, PREPROD: 20.0
     Param("MoveAccelerationInAttackRest", "20.0");
     Param("MoveSprintMinAcceleration", "4.5");
-    Param("MoveSprintAcceleration", "80.0");
+    Param("MoveSprintAcceleration", "300.0");
     Param("MoveDeceleration", "120.0");
     Param("MoveGlideDownMaxSpeed", "0.5");
     Param("MoveGlideDownDeceleration", "-1.0");
@@ -611,7 +611,7 @@ sub main()
 	Param("SwayAssistTime", "0.5");
 	Param("SwayGravity", "-9.5");
 	
-	Param("VeryLargeJumpDistance", "6.2");    
+	Param("VeryLargeJumpDistance", "8.2");    
     Param("RopeHookThrowPowerMax", "200.0");
     Param("RopeHookThrowPowerMin", "200.0");
     Param("RopeHookGravityScale", "5.0");
@@ -967,7 +967,7 @@ sub main()
 	Param("SlideBodyRotateTime", "0.0");	
 	Param("SlideAvailable", "0");
 	Param("SlideAttackLoop", "0");	
-	Param("SlideNitroAcceceleration", "200.0");
+	Param("SlideNitroAcceceleration", "600.0");
 	Param("SlideAcceceleration", "100.0");
 	Param("SlideDeceleration", "400.0");
 	Param("SlideLoopMinDuration", "0.1");
@@ -1606,8 +1606,8 @@ sub main()
 	Param("LowHealthDropMaxLifeTime", "16.0");
 	
 	Param("HitReactionDefaultPushDuration", "0.25");
-	Param("HitReactionDefaultPushSpeed", "5.5");
-	Param("HitReactionPushAcceleration", "100.0");
+	Param("HitReactionDefaultPushSpeed", "9.5");
+	Param("HitReactionPushAcceleration", "200.0");
 	
     Param("DPCrftPrtAndVlbPrcntAligmentZero", "0.0");
 	Param("DPCrftPrtAndVlbPrcntZoneMinus1", "0.0");
